@@ -1,0 +1,11 @@
+1. In int brightnessSetting = 75;, the data type is int, the variable name is brightnessSetting, and the starting value is 75. To change it to 50, I can write brightnessSetting = 50; or change the declaration to int brightnessSetting = 50;.
+
+2. bool works for switchOn because a switch is either on or off, which is the same as true or false. int works for brightnessSetting because brightness is a whole number that can be many different values, like 0 to 100, and a bool can’t do that.
+
+3. The output is “Brightness setting: 80” and “Lamp brightness: 0”. The setting is still 80, but the lamp brightness is 0 because the switch is off.
+
+4. No, they’re not the same variable. Arduino code (C++) cares about capital letters, so switchOn and switchon are two different names.
+
+5. The function gets switchOn (a bool) and brightnessSetting (an int). It returns an int: the brightness setting if the switch is on, or 0 if it’s off.
+
+6. No, loop() can’t use lampBrightness if it’s declared inside setup(). A variable made inside a function only works inside that function. To use it in both, I’d declare it outside of both functions as a global variable.
